@@ -1,0 +1,23 @@
+# Đặt hành vi mặc định để tự động chuẩn hóa kết thúc dòng
+* text=auto
+
+# Khai báo rõ ràng các tệp văn bản bạn muốn luôn chuẩn hóa và chuyển đổi thành kết thúc dòng gốc khi kiểm tra.
+*.py text
+*.html text
+*.css text
+*.js text
+
+# Khai báo các tệp sẽ luôn có kết thúc dòng LF khi kiểm tra.
+*.sh text eol=lf
+*.yml text eol=lf
+
+# Khai báo các tệp sẽ luôn có kết thúc dòng CRLF khi kiểm tra.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Các tệp nhị phân nên được xử lý như nhị phân và không được chỉnh sửa.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
